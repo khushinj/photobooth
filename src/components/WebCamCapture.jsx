@@ -4,7 +4,7 @@ import '../filters.css'; // Custom filters CSS
 const WebcamCapture = () => {
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
-  const [hasPermission, setHasPermission] = useState(false);
+  const [HasPermission, setHasPermission] = useState(false);
   const [capturedImages, setCapturedImages] = useState([]);
   const [selectedFilter, setSelectedFilter] = useState('');
 
@@ -18,6 +18,7 @@ const WebcamCapture = () => {
       } catch (err) {
         alert('Camera access denied or not supported.');
         setHasPermission(false);
+        console.log(err);
       }
     }
     requestCamera();
