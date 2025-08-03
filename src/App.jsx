@@ -1,10 +1,17 @@
-import React from 'react'
-import WebCamCapture from './components/WebCamCapture'
-export default function App() {
-  
+// App.jsx
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './components/LandingPage';
+import WebcamCapture from './components/WebcamCapture';
+
+function App() {
   return (
-    <div>
-      <WebCamCapture />
-    </div>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/camera" element={<WebcamCapture />} />
+      </Routes>
+    </Router>
+  );
 }
+
+export default App;
