@@ -148,3 +148,14 @@ button:hover {
   border-radius: 4px;
   text-decoration: none;
 }
+.filter-rosy-matte {
+  filter: 
+    brightness(0.95)
+    contrast(0.85)
+    sepia(0.15)
+    hue-rotate(-20deg)
+    saturate(1.1)
+    grayscale(0.1)
+    blur(0.4px);
+  mix-blend-mode: lighten;
+}

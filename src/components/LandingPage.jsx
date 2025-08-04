@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ChooseFilter from '../../public/choose-filter.jpg';
-import Pose from '../../public/photobooth-pose.jpg';
-
+import ChooseFilter from '../choose-filter.jpg';
+import Pose from '../photobooth-pose.jpg';
+import Capture from '../capture.jpeg';
 
 
 const LandingPage = () => {
@@ -45,7 +45,7 @@ const LandingPage = () => {
                         <p>See yourself live with the filter and make sure everything looks perfect.</p>
                     </div>
                     <div className="text-center">
-                        <img src="/images/capture.svg" alt="Capture" className="mx-auto mb-4 w-20 h-20" />
+                        <img src={Capture} alt="Capture" className="mx-auto mb-4 w-110 h-60 mt-10 rounded-2xl" />
                         <h3 className="text-xl font-semibold mb-2">Capture & Save</h3>
                         <p>Take your photo and download or share it instantly. It’s that simple!</p>
                     </div>

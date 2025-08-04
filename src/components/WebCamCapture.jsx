@@ -44,6 +44,7 @@ const WebcamCapture = () => {
     'filter-bw-moody',
     'filter-vibrant',
     'lanaFilter',
+    'filter-rosy-matte',
   ];
 
   return (
@@ -59,7 +60,7 @@ const WebcamCapture = () => {
       {/* Camera & Filter Section */}
       <section className="py-10 px-4">
         <div className="bg-white shadow-2xl rounded-3xl p-6 md:p-10 max-w-4xl mx-auto">
-          <div className={`rounded-xl overflow-hidden border border-gray-300 ${selectedFilter}`}>
+          <div className={`rounded-xl overflow-hidden border border-gray-300  ${selectedFilter}`}>
             <video
               ref={videoRef}
               className="w-full rounded-xl"
@@ -72,7 +73,7 @@ const WebcamCapture = () => {
 
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <select
-              className="w-full sm:w-auto p-3 rounded-xl border border-gray-300 bg-[#fffaf4] text-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-300"
+              className="w-full sm:w-auto p-3 rounded-xl border border-gray-300 bg-[#fffaf4] text-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-300 "
               onChange={e => setSelectedFilter(e.target.value)}
             >
               {filters.map((filter, index) => (
